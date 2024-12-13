@@ -1,0 +1,159 @@
+body {
+  background-color: #F6CEF5;
+  background-size: 100px;
+  overflow: hidden; 
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+
+  /** 기본 폰트 설정 */
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #738186;
+  width: 960px;
+  height: 660px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+.profile-container {
+  flex: 0.4;
+  margin-right: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+}
+ㄴ
+.menu-container {
+  flex: 0.15;
+}
+
+.header {
+  flex: 0.1;
+}
+
+.box {
+  background-color: white;
+  flex: 3;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+}
+
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.content-title-name {
+  flex: 1;
+}
+
+.content-title-url {
+  flex: 1;
+  font-size: 0.5rem; /* 적용한 폰트 특성 상 사이즈가 커서 font-size 조정 */
+  text-align: end; /* 텍스트 우측 정렬 */
+}
+
+.profile-title {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-red {
+  color: red;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.profile-image {
+  flex: none;
+}
+
+.profile-image-img {
+  width: 100px;  /* 너비 100% */
+  height: auto; /* 높이는 자동으로 조정 */
+  max-width: 150px; /* 최대 너비 설정으로 너무 커지지 않게 */
+}
+.profile-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.profile-username {
+  flex: 0;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+
+.menu-button button {
+  width: 100%; /* 가로길이 %설정*/
+  text-align: left; /*텍스트 왼쪽 정렬*/
+  margin-bottom: 0.9rem; /*버튼 간 margin 설정*/
+  font-size: 1rem; /*폰트사이즈 설정*/
+  font-family: "NeoDunggeunmo"; /*폰트 스타일*/
+  padding: 0.4rem; /*버튼 여백 크기*/
+  background-color: #3B87AB; /*버튼 배경색*/
+  color: white; /*폰트 색깔*/
+  border-radius: 0 5px 5px 0; /*버튼 둥근 모서리*/
+  border: 1px solid grey; /*버튼 윤곽선 */
+}
+/*메뉴버튼의 첫번째 요소(first-child)인 
+[홈]버튼만 margin-top설정*/
+.menu-button:first-child {
+  margin-top: 3rem;
+}
+/* 버튼 위에 마우스 놓으면(hover)
+버튼 배경색과 폰트색 변하도록 스타일링 */
+a button:hover {
+  background-color: skyblue;
+  color: yellow;
+} 
